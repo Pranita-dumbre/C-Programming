@@ -1,14 +1,10 @@
-######################################################################## 
-Pattern Printing in C
-##########################################################################
+# Pattern Printing in C
 
-About
+## About
 
 This folder contains C programs for various pattern printing problems. The programs are designed to improve logical thinking and strengthen the understanding of nested loops and conditional statements.
 
-###########################################################################
- Topics Covered
-##########################################################################
+## Topics Covered
 
 - Star Patterns
 - Number Patterns
@@ -18,18 +14,14 @@ This folder contains C programs for various pattern printing problems. The progr
 - Pyramid Patterns
 - Matrix Patterns
 
-################################################################################
- Skills Practiced
-################################################################################
+## Skills Practiced
 
 - Nested Loops
 - Conditional Statements
 - Pattern Logic
 - Problem Solving
 
-##############################################################################
- How to Run
-##############################################################################
+## How to Run
 
 ```bash
 gcc Program51.c -o Program51
@@ -38,7 +30,7 @@ gcc Program51.c -o Program51
 ```powershell
 .\Program51.exe
 ```
-################################################################################
- Author
-################################################################################
-Pranita Purushottam Dumbre
+
+## Author
+
+**Pranita Purushottam Dumbre**
