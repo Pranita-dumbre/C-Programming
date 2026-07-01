@@ -1,0 +1,68 @@
+////////////////////////////////////////////////////////////////////
+//
+//  File Name :         program31.c
+//  Description :       Accept number from user and display factorial
+//  Author :            Pranita Purushottam Dumbre
+//  Date :              11/05/2026
+//
+/////////////////////////////////////////////////////////////////////
+#include<stdio.h>
+
+#define ERR_INVALID -1
+////////////////////////////////////////////////////////////////////
+//
+//  Function Name :     Factorial
+//  Description :       Calculate factorial of given number iteratively
+//  Author :            Pranita Purushottam Dumbre
+//  Date :              11/05/2026
+//
+/////////////////////////////////////////////////////////////////////
+unsigned long Factorial(
+                            unsigned int iNo
+                        )
+{
+    int iCnt = 0;
+    unsigned long iFact = 1;
+
+    if(iNo < 0)
+    {
+        return ERR_INVALID;
+    }
+    
+    iCnt = 1;
+    while( iCnt <= iNo )
+    {
+        iFact = iFact * iCnt;
+        iCnt++;
+    }
+
+    return iFact;
+}
+////////////////////////////////////////////////////////////////////
+//
+//  Function Name :     Main
+//  Description :       Accept input from user and display factorial
+//  Author :            Pranita Purushottam Dumbre
+//  Date :              11/05/2026
+//
+/////////////////////////////////////////////////////////////////////
+int main()
+{
+    unsigned int iValue = 0;
+    unsigned long iRet = 0;
+    
+    printf("Enter number : \n");
+    scanf("%u",&iValue);
+
+    iRet = Factorial(iValue);
+    if(iRet == ERR_INVALID)
+    {
+        printf("Invalid input\n");
+    }
+    else
+    {
+        printf("Factorial is : %lu\n",iRet);
+    }
+    
+    return 0;
+}
